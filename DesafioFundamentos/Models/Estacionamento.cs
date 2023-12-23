@@ -29,7 +29,6 @@ namespace DesafioFundamentos.Models
             Console.WriteLine("Digite a placa do veículo para remover:");
 
             // Pedir para o usuário digitar a placa e armazenar na variável placa
-            // *IMPLEMENTE AQUI*
             string placa = "";
             placa = Console.ReadLine().ToUpper();
             // Verifica se o veículo existe
@@ -41,7 +40,7 @@ namespace DesafioFundamentos.Models
                 horas = Convert.ToInt32(Console.ReadLine());
 
                 decimal valorTotal = 0; 
-                valorTotal = (precoInicial + precoPorHora) * horas;
+                valorTotal = precoInicial + precoPorHora * horas;
 
                 veiculos.Remove(placa);
 
